@@ -1,0 +1,32 @@
+:root {
+  --primary-font-family: "Calibri";
+  --primary-font-size: 18px;
+  --primary-font-size-heading: 25px;
+
+  --primary-font-weight: 400;
+  --primary-line-height: 1.25;
+
+  --padding: 0.5rem;
+  --margin: 1rem;
+
+  --scroll-bar-width: 16px;
+
+  --color-base-dark: #000000;
+  --color-base-light: #ffffff;
+  --color-error: #cc3333;
+  --color-primary-dark: #2D2C2C;
+  --color-primary-light: #404040;
+  --color-primary-lighter: #898A87;
+  --color-primary-lightest: #eeeeee;
+  --color-secondary-dark: #020259;
+  --color-secondary-light: #0a0aa6;
+  --color-tertiary-light: #20B2AA;
+
+}
+
+@font-face {
+  font-family: "Calibri";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/calibri-regular.ttf");
+}

@@ -1,0 +1,42 @@
+.app-product-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+  align-items: center;
+
+  border: none;
+
+  max-width: 300px;
+  padding: .5rem;
+  margin: .5rem;
+  cursor: default;
+
+  .app-product-card__name {
+    font-size: var(--primary-font-size-heading);
+  }
+
+  .app-product-card__img {
+    border: 2px solid var(--color-primary-light);
+    border-radius: 5px;
+    padding: .5rem;
+
+    width: 250px;
+    height: 350px;
+  }
+
+  .app-product-card__btn {
+    padding: .75rem;
+    margin: .5rem;
+    background-color: var(--color-primary-dark);
+    border: none;
+    border-radius: 5px;
+    color: var(--color-primary-lightest);
+
+    &:hover {
+      background-color: var(--color-primary-light);
+      cursor: pointer;
+    }
+  }
+}
+
+

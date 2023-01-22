@@ -1,0 +1,15 @@
+<div class="app-shopping-cart-item">
+  <span>{{ cartItem!.product.name }}</span>
+  <div class="app-shopping-cart-item__quantity">
+    <label>Quantity:</label>
+    <select [ngModel]="cartItem!.quantity" (ngModelChange)="onQuantityChange($event)">
+      <option *ngFor="let option of options">{{ option }}</option>
+    </select>
+  </div>
+  <div class="app-shopping-cart-item__price">
+    <span>{{ price | currency : 'USD' : 'symbol' :'1.2-2' : 'en-US' }}</span>
+  </div>
+  <div class="app-shopping-cart-item__icon-container">
+    <span class="app-shopping-cart-item__icon material-symbols-outlined" (click)="onDeleteItem(cartItem!)">delete</span>
+  </div>
+</div>

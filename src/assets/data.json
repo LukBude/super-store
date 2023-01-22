@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Book",
+    "price": 9.99,
+    "url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "description": "You can read it!"
+  },
+  {
+    "id": 2,
+    "name": "Headphones",
+    "price": 249.99,
+    "url": "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "description": "Listen to stuff!"
+  },
+  {
+    "id": 3,
+    "name": "Backpack",
+    "price": 79.99,
+    "url": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "description": "Carry things around town!"
+  },
+  {
+    "id": 4,
+    "name": "Glasses",
+    "price": 129.99,
+    "url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "description": "Now you can see!"
+  },
+  {
+    "id": 5,
+    "name": "Cup",
+    "price": 4.99,
+    "url": "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "description": "Drink anything with it!"
+  },
+  {
+    "id": 6,
+    "name": "Shirt",
+    "price": 29.99,
+    "url": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80",
+    "description": "Wear it with style!"
+  },
+  {
+    "id": 7,
+    "name": "Notebook",
+    "price": 23.25,
+    "url": "https://images.unsplash.com/photo-1623697899811-f2403f50685e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1003&q=80",
+    "description": "Write down your dreams!"
+  },
+  {
+    "id": 8,
+    "name": "Bicycle",
+    "price": 1850.00,
+    "url": "https://images.unsplash.com/photo-1572111504021-40abd3479ddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW91bnRhaW5iaWtlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+    "description": "Ride till you can't no more!"
+  },
+  {
+    "id": 9,
+    "name": "Surfboard",
+    "price": 589.00,
+    "url": "https://images.unsplash.com/photo-1528150177508-7cc0c36cda5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3VyZmJvYXJkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
+    "description": "Hang loose!"
+  },
+  {
+    "id": 10,
+    "name": "Christmas Sweater",
+    "price": 15.29,
+    "url": "https://images.unsplash.com/photo-1607575664476-c7772f6d8a42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2hyaXN0bWFzJTIwc3dlYXRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60",
+    "description": "Merry Christmas!"
+  }
+]

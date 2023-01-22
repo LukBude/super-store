@@ -1,0 +1,18 @@
+<nav class="app-horizontal-menu">
+  <div class="app-horizontal-menu__left-container">
+    <span class="app-horizontal-menu__logo material-symbols-outlined">shopping_bag</span>
+    <span class="app-hotizontal-menu__logo-text">SuperStore</span>
+  </div>
+  <div class="app-horizontal-menu__mid-container">
+    <a routerLink="/products" routerLinkActive="active" class="app-horizontal-menu__item">
+      <span class="app-horizontal-menu__item-link">Products</span>
+    </a>
+  </div>
+  <div class="app-horizontal-menu__right-container">
+    <a routerLink="/shopping-cart" routerLinkActive="active" class="app-horizontal-menu__item">
+      <span class="app-horizontal-menu__item-icon material-symbols-outlined">shopping_cart</span>
+      <span [ngClass]="{ 'hidden': (numCartItems$ | async) === 0}"
+            class="app-horizontal-menu__item-icon-decorator">{{ numCartItems$ | async }}</span>
+    </a>
+  </div>
+</nav>

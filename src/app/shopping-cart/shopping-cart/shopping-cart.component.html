@@ -1,0 +1,21 @@
+<div class="app-shopping-cart">
+
+  <div class="app-shopping-cart__empty-container" *ngIf="(cartItems$ | async)?.length === 0; else cartContent">
+    <h1 class="app-shopping-cart__empty-container-heading">YOUR CART</h1>
+    <p>Your cart is currently empty.</p>
+    <button class="app-shopping-cart__empty-container-continue" (click)="onContinue()">Continue Shopping</button>
+  </div>
+
+  <ng-template #cartContent>
+    <div class="app-shopping-cart__header">
+      <span>Your Cart</span>
+      <div class="app-shopping-cart__header-subTotal">
+        <span>Subtotal: </span>
+        <span>{{ subTotal$ | async | currency : 'USD' : 'symbol' :'1.2-2' : 'en-US' }}</span>
+      </div>
+    </div>
+    <app-shopping-cart-item *ngFor="let item of cartItems$ | async" [cartItem]="item"></app-shopping-cart-item>
+    <button class="app-shopping-cart__checkout">Checkout</button>
+  </ng-template>
+
+</div>
