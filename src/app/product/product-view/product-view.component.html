@@ -1,3 +1,4 @@
 <div class="app-product-view">
+  <app-spinner class="app-product-view__spinner"></app-spinner>
   <app-product-card *ngFor="let product of products$ | async" [product]="product"></app-product-card>
 </div>
