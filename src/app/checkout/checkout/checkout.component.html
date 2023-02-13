@@ -1,0 +1,91 @@
+<div class="app-checkout">
+
+  <div class="app-checkout__congratulations-container" *ngIf="confirmed && this.valid; else form">
+    <h1 class="congratulations-container__heading">Congratulations</h1>
+    <p>Your order has been successfully processed!</p>
+    <button class="congratulations-container__continue" (click)="onContinue()">Continue Shopping</button>
+  </div>
+
+  <ng-template #form>
+    <div class="app-checkout__header">
+      <h1>Contact Information:</h1>
+    </div>
+    <form class="app-checkout__form" [formGroup]="checkoutForm">
+      <div class="form__input-group-wrapper">
+        <div class="form__input-group">
+          <label for="firstNameInput">Firstname:</label>
+          <input type="text" class="form__input" id="firstNameInput" formControlName="firstName"
+                 [class.form__input-error]="!checkoutForm.get('firstName')?.valid && (checkoutForm.get('firstName')?.touched || confirmed)">
+          <span class="form__error-message"
+                *ngIf="!checkoutForm.get('firstName')?.valid && (checkoutForm.get('firstName')?.touched || confirmed)">Please enter a valid input</span>
+        </div>
+        <div class="form__input-group">
+          <label for="lastNameInput">Lastname:</label>
+          <input type="text" class="form__input" id="lastNameInput" formControlName="lastName"
+                 [class.form__input-error]="!checkoutForm.get('lastName')?.valid && (checkoutForm.get('lastName')?.touched || confirmed)">
+          <span class="form__error-message"
+                *ngIf="!checkoutForm.get('lastName')?.valid && (checkoutForm.get('lastName')?.touched || confirmed)">Please enter a valid input</span>
+        </div>
+      </div>
+      <div class="form__input-group-wrapper">
+        <div class="form__input-group">
+          <label for="streetInput">Street:</label>
+          <input type="text" class="form__input" id="streetInput" formControlName="street"
+                 [class.form__input-error]="!checkoutForm.get('street')?.valid && (checkoutForm.get('street')?.touched || confirmed)">
+          <span class="form__error-message"
+                *ngIf="!checkoutForm.get('street')?.valid && (checkoutForm.get('street')?.touched || confirmed)">Please enter a valid input</span>
+        </div>
+        <div class="form__input-group-wrapper">
+          <div class="form__input-group">
+            <label for="houseNumberInput">Housenumber:</label>
+            <input type="text" class="form__input" id="houseNumberInput" formControlName="houseNumber"
+                   [class.form__input-error]="!checkoutForm.get('houseNumber')?.valid && (checkoutForm.get('houseNumber')?.touched || confirmed)">
+            <span class="form__error-message"
+                  *ngIf="!checkoutForm.get('houseNumber')?.valid && (checkoutForm.get('houseNumber')?.touched || confirmed)">Please enter a valid input</span>
+          </div>
+          <div class="form__input-group">
+            <label for="houseNumberAffixInput">Housenumber Affix:</label>
+            <input type="text" class="form__input" id="houseNumberAffixInput" formControlName="houseNumberAffix"
+                   [class.form__input-error]="!checkoutForm.get('houseNumberAffix')?.valid && (checkoutForm.get('houseNumberAffix')?.touched || confirmed)">
+            <span class="form__error-message"
+                  *ngIf="!checkoutForm.get('houseNumberAffix')?.valid && (checkoutForm.get('houseNumberAffix')?.touched || confirmed)">Please enter a valid input</span>
+          </div>
+        </div>
+      </div>
+      <div class="form__input-group">
+        <label for="countryInput">Country:</label>
+        <input type="text" class="form__input" id="countryInput" formControlName="country"
+               [class.form__input-error]="!checkoutForm.get('country')?.valid && (checkoutForm.get('country')?.touched || confirmed)">
+        <span class="form__error-message"
+              *ngIf="!checkoutForm.get('country')?.valid && (checkoutForm.get('country')?.touched || confirmed)">Please enter a valid input</span>
+      </div>
+      <div class="form__input-group-wrapper">
+        <div class="form__input-group">
+          <label for="postalCodeInput">Postal Code:</label>
+          <input type="text" class="form__input" id="postalCodeInput" formControlName="postalCode"
+                 [class.form__input-error]="!checkoutForm.get('postalCode')?.valid && (checkoutForm.get('postalCode')?.touched || confirmed)">
+          <span class="form__error-message"
+                *ngIf="!checkoutForm.get('postalCode')?.valid && (checkoutForm.get('postalCode')?.touched || confirmed)">Please enter a valid input</span>
+        </div>
+        <div class="form__input-group">
+          <label for="cityInput">City:</label>
+          <input type="text" class="form__input" id="cityInput" formControlName="city"
+                 [class.form__input-error]="!checkoutForm.get('city')?.valid && (checkoutForm.get('city')?.touched || confirmed)">
+          <span class="form__error-message"
+                *ngIf="!checkoutForm.get('city')?.valid && (checkoutForm.get('city')?.touched || confirmed)">Please enter a valid input</span>
+        </div>
+      </div>
+      <div class="form__input-group">
+        <label for="emailInput">Mail:</label>
+        <input type="text" class="form__input" id="emailInput" formControlName="email"
+               [class.form__input-error]="!checkoutForm.get('email')?.valid && (checkoutForm.get('email')?.touched || confirmed)">
+        <span class="form__error-message"
+              *ngIf="!checkoutForm.get('email')?.valid && (checkoutForm.get('email')?.touched || confirmed)">Please enter a valid input</span>
+      </div>
+    </form>
+    <div class="app-checkout__confirm">
+      <button (click)="onConfirm()">Confirm</button>
+    </div>
+  </ng-template>
+
+</div>

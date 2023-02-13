@@ -41,6 +41,11 @@ export class ShoppingCartService {
     this.updateObservables();
   }
 
+  resetCart(): void {
+    this.cartItems = [];
+    this.updateObservables();
+  }
+
   private calculateSubTotal(): number {
     let subTotal = 0;
     for (let item of this.cartItems) {

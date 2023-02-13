@@ -23,4 +23,8 @@ export class ShoppingCartComponent implements OnInit {
   onContinue(): void {
     this.router.navigate(['products']);
   }
+
+  onCheckout(): void {
+    this.router.navigate(['checkout']);
+  }
 }

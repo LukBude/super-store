@@ -15,7 +15,7 @@
       </div>
     </div>
     <app-shopping-cart-item *ngFor="let item of cartItems$ | async" [cartItem]="item"></app-shopping-cart-item>
-    <button class="app-shopping-cart__checkout">Checkout</button>
+    <button class="app-shopping-cart__checkout" (click)="onCheckout()">Checkout</button>
   </ng-template>
 
 </div>
