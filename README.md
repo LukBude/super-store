@@ -1,4 +1,4 @@
-# WebShop
+# super-store
 
 This project shows how to implement the frontend of a simple eCommerce application using Angular. 
 
