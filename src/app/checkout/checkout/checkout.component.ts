@@ -54,7 +54,7 @@ export class CheckoutComponent implements OnInit {
         updateOn: 'blur'
       }),
       email: new FormControl('', {
-        validators: [Validators.required, Validators.pattern('^\\w+\\.{1}\\w+@{1}\\w+\\.{1}\\w{2,3}')],
+        validators: [Validators.required, Validators.pattern('^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$')],
         updateOn: 'blur'
       })
     });
